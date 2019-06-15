@@ -1,5 +1,5 @@
 <template>
-  <button :class="[type?'d-button-'+type+ ' d-button':'', size?'d-button-'+size:'']" @click="router">
+  <button :class="[type?'d-label-'+type+ ' d-label':'', size?'d-label-'+size:'']" @click="router">
     <slot></slot>
   </button>
 </template>
@@ -30,7 +30,7 @@ export default {
     style() {
       var className = "";
 
-      return "button-routine";
+      return "label-routine";
     }
   }
 };
@@ -38,37 +38,23 @@ export default {
 
 <style>
 
-.d-button{
+.d-label{
 	padding:5px;
     border-radius: 5px 5px 0 0;
 
 }
-.d-button-big{
+.d-label-big{
 	padding:8px;
 	
 }
-.d-button-medium{
+.d-label-medium{
 	padding:5px;
 }
 .d-button-small{
 	padding:2px;
 }
 
-.d-button-top-label{
+.d-label-top-label{
 	border-bottom-color: white;
-}
-/* .button-routine-{
-  padding: 6px;
-  border-radius: 5px 5px 0 0;
-  margin-left: -1px;
-  border-bottom-color: white;
-  margin-right: 3px;
-}
-.buttons {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.current-button-routine {
-  z-index: 0;
-} */
+} 
 </style>

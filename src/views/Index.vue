@@ -6,8 +6,9 @@
                 <d-pane label="其他" flag="2">2</d-pane>
                 <button slot="other" @click="addThingsToDo" class="label">
                     +
-                    
+                    +
                 </button>
+
 
                 <d-pane label="其他" flag="3">3</d-pane>
             </d-tabs>

@@ -1,6 +1,6 @@
 <template>
-    <div v-show="show">
-        <slot></slot>
+    <div v-show="show" class="pane-content" >
+        <slot ></slot>
     </div>
 </template>
 
@@ -25,4 +25,12 @@ export default {
 </script>
 
 <style>
+.pane-content{
+	padding:10px;
+	height:100%;
+	overflow: scroll;
+	box-sizing: border-box;
+ 
+}
 </style>
+

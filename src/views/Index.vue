@@ -2,10 +2,22 @@
     <div class="body">
         <div class="container">
             <d-tabs defaultOpen="1" ref="tabs">
-                <d-pane label="综合" flag="1">1</d-pane>
+                <d-pane label="综合" flag="1">
+                    <d-row>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+                        <d-col :span="3">ds</d-col>
+
+                    </d-row>
+                </d-pane>
                 <d-pane label="其他" flag="2">2</d-pane>
                 <button slot="other" @click="addThingsToDo" class="label">
-                    +
                     +
                 </button>
 
@@ -19,11 +31,16 @@
 <script>
 import dTabs from "../components/d-tabs.vue";
 import dPane from "../components/d-pane.vue";
+import dRow from "../components/d-row.vue";
+import dCol from "../components/d-col.vue";
+
 export default {
     name: "HelloWorld",
     components: {
         dTabs,
-        dPane
+        dPane,
+        dRow,
+        dCol
     },
     props: {
         msg: String
@@ -61,15 +78,16 @@ html {
 }
 .container {
     position: absolute;
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     top: 50%;
     left: 50%;
+    border: 1px solid red;
     transform: translate(-50%, -50%);
 }
 
 .content {
-    height: 700px;
+    height: 70vh;
 }
 .labels {
     margin-top: 10px;

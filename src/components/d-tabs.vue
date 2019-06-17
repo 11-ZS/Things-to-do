@@ -29,8 +29,7 @@ export default {
     },
     methods: {
         getClass(key) {
-            console.log(typeof key, key);
-            console.log(typeof this.currentFocus, this.currentFocus);
+     
             return [
                 "label",
                 {
